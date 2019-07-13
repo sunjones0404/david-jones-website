@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="https://kit.fontawesome.com/a43c238cd0.js"></script>
 		<link
 			href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap"
 			rel="stylesheet"
@@ -12,6 +13,12 @@
 		<title>David Jones - Designer & Front End Developer</title>
 	</head>
 	<body>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li id="work" class="nav__list-item">Work</li>
+				<li id="skills" class="nav__list-item">Skills</li>
+			</ul>
+		</nav>
 		<main class="section section--grey">
 			<div class="container">
 				<div class="col">
@@ -52,6 +59,46 @@
 				</div>
 			</div>
 		</main>
-		<script src="js/main.js"></script>
+		<div class="modal-wrapper">
+			<div class="modal">
+				<h3 class="sub-heading">Stack</h3>
+				<ul class="modal__list">
+					<li class="modal__list-item">
+						<i class="fab fa-html5 icon--green"></i> HTML
+					</li>
+					<li class="modal__list-item">
+						<i class="fab fa-css3 icon--green"></i> CSS / Sass
+					</li>
+					<li class="modal__list-item">
+						<i class="fab fa-js icon--green"></i> JavaScript ES6
+					</li>
+					<li class="modal__list-item">
+						<i class="fab fa-node-js icon--green"></i> Node.js / Express
+					</li>
+					<li class="modal__list-item">
+						<i class="far fa-database icon--green"></i> MongoDB / Firebase
+					</li>
+					<li class="modal__list-item">
+						<i class="fab fa-react icon--green"></i> React
+					</li>
+				</ul>
+				<h3 class="sub-heading p-t-l">Design Tools</h3>
+				<ul class="modal__list">
+					<li class="modal__list-item">
+						<i class="fab fa-adobe icon--red"></i> Adobe Illustrator
+					</li>
+					<li class="modal__list-item">
+						<i class="fab fa-adobe icon--red"></i> Adobe Photoshop
+					</li>
+					<li class="modal__list-item">
+						<i class="fab fa-adobe icon--red"></i> Adobe InDesign
+					</li>
+					<li class="modal__list-item">
+						<i class="fab fa-adobe icon--red"></i> Adobe XD
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="/js/main.js"></script>
 	</body>
 </html>

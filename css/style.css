@@ -337,6 +337,45 @@ template {
   display: none;
 }
 
+.p-s {
+  padding: 0.5em;
+}
+.p-m {
+  padding: 1em;
+}
+.p-l {
+  padding: 2em;
+}
+.p-xl {
+  padding: 4em;
+}
+
+.p-t-s {
+  padding-top: 0.5em;
+}
+.p-t-m {
+  padding-top: 1em;
+}
+.p-t-l {
+  padding-top: 2em;
+}
+.p-t-xl {
+  padding-top: 4em;
+}
+
+.p-b-s {
+  padding-bottom: 0.5em;
+}
+.p-b-m {
+  padding-bottom: 1em;
+}
+.p-b-l {
+  padding-bottom: 2em;
+}
+.p-b-xl {
+  padding-bottom: 4em;
+}
+
 /* Fonts */
 /* ========================================================================== */
 @font-face {
@@ -451,9 +490,9 @@ body {
 .round-border:hover:after {
   content: "";
   position: absolute;
-  background: #40e0d0;
-  background: -webkit-linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
-  background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
   top: 0;
   left: 0;
   width: 5.4em;
@@ -470,6 +509,14 @@ body {
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
+}
+
+.icon--green {
+  color: #009900;
+}
+
+.icon--red {
+  color: #d10000;
 }
 
 .btn {
@@ -497,6 +544,33 @@ body {
   opacity: 1;
 }
 
+.nav {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+}
+.nav__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.nav__list-item {
+  background-color: #b3b3b3;
+  height: 100%;
+  list-style: none;
+  margin: 0 1px;
+  padding: 0.7em 1em;
+  color: #ffffff;
+  transition: all 0.2s;
+  border-radius: 0 0 0.2em 0.2em;
+  cursor: pointer;
+}
+.nav__list-item:hover {
+  background-color: #4a2afc;
+}
+
 @keyframes borderAnimate {
   0% {
     transform: rotate(0deg);
@@ -504,4 +578,34 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 0.4em;
+  min-width: 20em;
+}
+.modal__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.modal__list-item {
+  list-style: none;
+  color: #666666;
+  line-height: 1.5;
 }

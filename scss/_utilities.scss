@@ -1,0 +1,44 @@
+.p {
+	&-s {
+		padding: 0.5em;
+	}
+	&-m {
+		padding: 1em;
+	}
+	&-l {
+		padding: 2em;
+	}
+	&-xl {
+		padding: 4em;
+	}
+}
+
+.p-t {
+	&-s {
+		padding-top: 0.5em;
+	}
+	&-m {
+		padding-top: 1em;
+	}
+	&-l {
+		padding-top: 2em;
+	}
+	&-xl {
+		padding-top: 4em;
+	}
+}
+
+.p-b {
+	&-s {
+		padding-bottom: 0.5em;
+	}
+	&-m {
+		padding-bottom: 1em;
+	}
+	&-l {
+		padding-bottom: 2em;
+	}
+	&-xl {
+		padding-bottom: 4em;
+	}
+}

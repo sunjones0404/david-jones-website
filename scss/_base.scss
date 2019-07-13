@@ -55,10 +55,9 @@ body {
 		&:after {
 			content: '';
 			position: absolute;
-			background: #40e0d0;
-			background: -webkit-linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
-			background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
-
+			background: #833ab4;
+			background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+			background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
 			top: 0;
 			left: 0;
 			width: 5.4em;
@@ -78,4 +77,12 @@ body {
 	cursor: pointer;
 	z-index: 1;
 	// border: 1px solid lighten($grey, 30%);
+}
+
+.icon--green {
+	color: #009900;
+}
+
+.icon--red {
+	color: #d10000;
 }

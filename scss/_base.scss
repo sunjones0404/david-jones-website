@@ -39,10 +39,43 @@ body {
 	text-align: left;
 }
 
+.round-border {
+	position: relative;
+	width: 5.4em;
+	height: 5.4em;
+	border-radius: 50%;
+	background: #1488cc;
+	background: -webkit-linear-gradient(to right, #2b32b2, #1488cc);
+	background: linear-gradient(to right, #2b32b2, #1488cc);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&:hover {
+		&:after {
+			content: '';
+			position: absolute;
+			background: #40e0d0;
+			background: -webkit-linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+			background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
+
+			top: 0;
+			left: 0;
+			width: 5.4em;
+			height: 5.4em;
+			border-radius: 50%;
+			z-index: 0;
+			cursor: pointer;
+			animation: borderAnimate 1s linear infinite;
+		}
+	}
+}
+
 .img {
 	width: 5em;
 	height: 5em;
 	border-radius: 50%;
-	border: 1px solid lighten($grey, 30%);
-	margin-bottom: 1.5em;
+	cursor: pointer;
+	z-index: 1;
+	// border: 1px solid lighten($grey, 30%);
 }

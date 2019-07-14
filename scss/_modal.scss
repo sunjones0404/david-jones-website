@@ -6,7 +6,7 @@
 	width: 100vw;
 	background-color: rgba(0, 0, 0, 0.7);
 	z-index: 999;
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 }
@@ -31,13 +31,51 @@
 			line-height: 1.5;
 		}
 	}
+
+	&__close {
+		position: relative;
+		float: right;
+		width: 2.5em;
+		height: 2.5em;
+		border-radius: 50%;
+		border: 2px solid $grey;
+		transition: all 0.3s;
+		cursor: pointer;
+		&-left {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 1.5em;
+			height: 0.1em;
+			background-color: $grey;
+			transform: translate(-50%, -50%) rotate(45deg);
+			transition: all 0.3s;
+		}
+		&-right {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 1.5em;
+			height: 0.1em;
+			background-color: $grey;
+			transform: translate(-50%, -50%) rotate(135deg);
+			transition: all 0.3s;
+		}
+		&:hover {
+			& .modal__close-left {
+				width: 1.2em;
+			}
+			& .modal__close-right {
+				width: 1.2em;
+			}
+		}
+	}
 }
 
 @media all and (max-width: $tablet) {
 	.modal-wrapper {
 		position: fixed;
 		overflow-y: scroll;
-		display: block;
 	}
 	.modal {
 		width: 100vw;

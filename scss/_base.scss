@@ -8,10 +8,6 @@ html {
 	padding: 0;
 }
 
-body {
-	min-height: 100%;
-}
-
 .section {
 	width: 100vw;
 	min-height: 100vh;
@@ -55,10 +51,9 @@ body {
 		&:after {
 			content: '';
 			position: absolute;
-			background: #40e0d0;
-			background: -webkit-linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
-			background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
-
+			background: #833ab4;
+			background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+			background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
 			top: 0;
 			left: 0;
 			width: 5.4em;

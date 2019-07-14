@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="https://kit.fontawesome.com/a43c238cd0.js"></script>
 		<link
 			href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap"
 			rel="stylesheet"
@@ -12,6 +13,11 @@
 		<title>David Jones - Designer & Front End Developer</title>
 	</head>
 	<body>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li id="skills" class="nav__list-item">Skills</li>
+			</ul>
+		</nav>
 		<main class="section section--grey">
 			<div class="container">
 				<div class="col">
@@ -52,6 +58,59 @@
 				</div>
 			</div>
 		</main>
-		<script src="js/main.js"></script>
+		<div id="skills-modal" class="modal-wrapper">
+			<div class="modal">
+				<div id="skills-modal-close" class="modal__close">
+					<span class="modal__close-left"></span>
+					<span class="modal__close-right"></span>
+				</div>
+				<h3 class="sub-heading">Stack</h3>
+				<ul class="modal__list">
+					<li class="modal__list-item">
+						<i class="fab fa-html5 icon--orange"></i> HTML
+					</li>
+					<li class="modal__list-item">
+						<i class="fab fa-css3 icon--blue"></i> CSS / Sass
+					</li>
+					<li class="modal__list-item">
+						<i class="fab fa-js icon--yellow"></i> JavaScript ES5 / ES6
+					</li>
+					<li class="modal__list-item">
+						<i class="fab fa-node-js icon--green"></i> Node.js / Express
+					</li>
+					<li class="modal__list-item">
+						<i class="far fa-database"></i> MongoDB / Firebase
+					</li>
+					<li class="modal__list-item">
+						<i class="fab fa-react icon--blue"></i> React
+					</li>
+					<li class="modal__list-item">
+                            <i class="fab fa-vuejs icon--aqua"></i></i> Vue
+					</li>
+				</ul>
+				<h3 class="sub-heading p-t-l">Design / Coding Tools</h3>
+				<ul class="modal__list">
+					<li class="modal__list-item">
+						<i class="fab fa-adobe icon--red"></i> Adobe<sup>®</sup> Illustrator
+					</li>
+					<li class="modal__list-item">
+						<i class="fab fa-adobe icon--red"></i> Adobe<sup>®</sup> Photoshop
+					</li>
+					<li class="modal__list-item">
+						<i class="fab fa-adobe icon--red"></i> Adobe<sup>®</sup> InDesign
+					</li>
+					<li class="modal__list-item">
+						<i class="fab fa-adobe icon--red"></i> Adobe<sup>®</sup> XD
+					</li>
+					<li class="modal__list-item">
+                            <i class="fab fa-windows icon--blue"></i> VS Code
+                    </li>
+                    <li class="modal__list-item">
+                            <i class="fab fa-git-alt icon--orange"></i> Git
+                    </li>
+				</ul>
+			</div>
+		</div>
+		<script src="/js/main.js"></script>
 	</body>
 </html>

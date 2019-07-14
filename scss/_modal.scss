@@ -1,5 +1,5 @@
 .modal-wrapper {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100vh;
@@ -12,10 +12,12 @@
 }
 
 .modal {
+	position: relative;
 	background-color: $white;
 	padding: 2em;
 	border-radius: 0.4em;
 	min-width: 20em;
+	height: auto;
 
 	&__list {
 		display: flex;
@@ -28,5 +30,18 @@
 			color: $grey;
 			line-height: 1.5;
 		}
+	}
+}
+
+@media all and (max-width: $tablet) {
+	.modal-wrapper {
+		position: fixed;
+		overflow-y: scroll;
+		display: block;
+	}
+	.modal {
+		width: 100vw;
+		min-height: 100vh;
+		border-radius: 0;
 	}
 }

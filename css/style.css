@@ -511,14 +511,6 @@ body {
   z-index: 1;
 }
 
-.icon--green {
-  color: #009900;
-}
-
-.icon--red {
-  color: #d10000;
-}
-
 .btn {
   display: inline-block;
   font-family: "hk_grotesksemibold", sans-serif;
@@ -580,7 +572,7 @@ body {
   }
 }
 .modal-wrapper {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
@@ -593,10 +585,12 @@ body {
 }
 
 .modal {
+  position: relative;
   background-color: #ffffff;
   padding: 2em;
   border-radius: 0.4em;
   min-width: 20em;
+  height: auto;
 }
 .modal__list {
   display: flex;
@@ -608,4 +602,36 @@ body {
   list-style: none;
   color: #666666;
   line-height: 1.5;
+}
+
+@media all and (max-width: 767px) {
+  .modal-wrapper {
+    position: fixed;
+    overflow-y: scroll;
+    display: block;
+  }
+
+  .modal {
+    width: 100vw;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+}
+.icon--green {
+  color: #009900;
+}
+.icon--red {
+  color: #d10000;
+}
+.icon--orange {
+  color: #ff3300;
+}
+.icon--blue {
+  color: #00a2ff;
+}
+.icon--aqua {
+  color: #00b38c;
+}
+.icon--yellow {
+  color: #ffae00;
 }

@@ -656,6 +656,21 @@ html {
     border-radius: 0;
   }
 }
+.icon {
+  font-size: 16px;
+  padding: 0.5em 0;
+  margin-right: 0.7em;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+.icon:hover {
+  opacity: 0.8;
+}
+.icon-container {
+  border-top: 1px solid #4a2afc;
+  margin-top: 20px;
+  padding-top: 10px;
+}
 .icon--green {
   color: #009900;
 }
@@ -673,4 +688,7 @@ html {
 }
 .icon--yellow {
   color: #ffae00;
+}
+.icon--linkedin {
+  color: #0077b5;
 }

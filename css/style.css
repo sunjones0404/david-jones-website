@@ -401,6 +401,10 @@ p {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main-heading {
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -661,6 +665,7 @@ html {
   padding: 0.5em 0;
   margin-right: 0.7em;
   transition: all 0.1s;
+  text-decoration: none;
   cursor: pointer;
 }
 .icon:hover {

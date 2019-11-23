@@ -54,16 +54,7 @@
     border: 2px solid $grey;
     transition: all 0.3s;
     cursor: pointer;
-    &-left {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 1.5em;
-      height: 0.1em;
-      background-color: $grey;
-      transform: translate(-50%, -50%) rotate(45deg);
-      transition: all 0.3s;
-    }
+    &-left,
     &-right {
       position: absolute;
       top: 50%;
@@ -71,8 +62,13 @@
       width: 1.5em;
       height: 0.1em;
       background-color: $grey;
-      transform: translate(-50%, -50%) rotate(135deg);
       transition: all 0.3s;
+    }
+    &-left {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &-right {
+      transform: translate(-50%, -50%) rotate(135deg);
     }
     &:hover {
       & .modal__close-left {

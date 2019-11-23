@@ -664,25 +664,20 @@ html {
   transition: all 0.3s;
   cursor: pointer;
 }
-.modal__close-left {
+.modal__close-left, .modal__close-right {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 1.5em;
   height: 0.1em;
   background-color: #666666;
-  transform: translate(-50%, -50%) rotate(45deg);
   transition: all 0.3s;
 }
+.modal__close-left {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
 .modal__close-right {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1.5em;
-  height: 0.1em;
-  background-color: #666666;
   transform: translate(-50%, -50%) rotate(135deg);
-  transition: all 0.3s;
 }
 .modal__close:hover .modal__close-left {
   width: 1.2em;

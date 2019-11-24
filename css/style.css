@@ -625,12 +625,19 @@ html {
   align-items: center;
   justify-content: center;
 }
+.modal-wrapper.active {
+  display: flex;
+}
 
 .modal {
   position: relative;
   padding: 2em;
   border-radius: 0.4em;
   min-width: 20em;
+  display: none;
+}
+.modal-wrapper.active .modal {
+  display: block;
 }
 .light .modal {
   background-color: #ffffff;

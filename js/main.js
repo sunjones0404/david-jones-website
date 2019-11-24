@@ -14,17 +14,17 @@ const modal = {
 };
 
 btn.skills.addEventListener('click', e => {
-  modal.skills.style.display = 'flex';
+  modal.skills.classList.add('active');
 });
 
 btn.skillsClose.addEventListener('click', () => {
-  modal.skills.style.display = 'none';
+  modal.skills.classList.remove('active');
 });
 
 body.addEventListener('click', e => {
   e.preventDefault();
   if (e.target.classList.contains('modal-wrapper')) {
-    modal.skills.style.display = 'none';
+    modal.skills.classList.remove('active');
   }
 });
 
@@ -38,9 +38,9 @@ btn.darkModeBtn.addEventListener('click', () => {
   }
 });
 
-let count = 20;
+let count = 30;
 
 btn.img.addEventListener('click', () => {
-  count += 20;
+  count += 30;
   btn.img.style.transform = `rotate(${count}deg)`;
 });

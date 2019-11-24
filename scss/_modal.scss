@@ -9,6 +9,9 @@
   display: none;
   align-items: center;
   justify-content: center;
+  &.active {
+    display: flex;
+  }
 }
 
 .modal {
@@ -16,6 +19,11 @@
   padding: 2em;
   border-radius: 0.4em;
   min-width: 20em;
+  display: none;
+
+  .modal-wrapper.active & {
+    display: block;
+  }
 
   .light & {
     background-color: $white;

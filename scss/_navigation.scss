@@ -14,25 +14,25 @@
       list-style: none;
       margin: 0 1px;
       padding: 0.7em 1em;
-      color: $white;
       transition: all 0.2s;
       border-radius: 0 0 0.2em 0.2em;
       cursor: pointer;
 
       .light & {
-        background-color: lighten($grey, 30%);
+        background-color: lighten($grey, 50%);
+        color: lighten($dark-grey, 25%);
 
         &:hover {
-          background-color: $primary;
+          background-color: lighten($grey, 45%);
         }
       }
 
       .dark & {
         background-color: darken($grey, 30%);
+        color: darken($white, 30%);
 
         &:hover {
-          background-color: $secondary;
-          color: $dark-grey;
+          background-color: darken($grey, 35%);
         }
       }
     }

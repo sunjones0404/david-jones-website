@@ -406,9 +406,9 @@ a {
 }
 
 .main-heading {
-  font-family: "Playfair Display", serif;
+  font-family: "hk_grotesksemibold", sans-serif;
   font-weight: 700;
-  font-size: 2.4em;
+  font-size: 2em;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 }
@@ -500,8 +500,8 @@ html {
 
 .round-border {
   position: relative;
-  width: 5.4em;
-  height: 5.4em;
+  width: 4.5em;
+  height: 4.5em;
   border-radius: 50%;
   background: #1488cc;
   background: -webkit-linear-gradient(to right, #2b32b2, #1488cc);
@@ -518,8 +518,8 @@ html {
   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
   top: 0;
   left: 0;
-  width: 5.4em;
-  height: 5.4em;
+  width: 4.5em;
+  height: 4.5em;
   border-radius: 50%;
   z-index: 0;
   cursor: pointer;
@@ -527,8 +527,8 @@ html {
 }
 
 .img {
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
@@ -552,7 +552,7 @@ html {
   color: #ffffff;
 }
 .dark .btn-primary {
-  background-color: #00b7ff;
+  background-color: #399fff;
   color: #222222;
 }
 .btn:hover {
@@ -724,7 +724,7 @@ html {
   border-top: 1px solid #4a2afc;
 }
 .dark .icon-container {
-  border-top: 1px solid #00b7ff;
+  border-top: 1px solid #399fff;
 }
 .icon--green {
   color: #009900;
